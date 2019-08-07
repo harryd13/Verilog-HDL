@@ -1,0 +1,334 @@
+$date
+	Wed Jul 31 10:47:26 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top $end
+$var wire 1 ! ca $end
+$var wire 16 " sum [15:0] $end
+$var reg 16 # a [15:0] $end
+$var reg 16 $ b [15:0] $end
+$var reg 1 % cin $end
+$scope module SBA_0 $end
+$var wire 16 & a [15:0] $end
+$var wire 16 ' b [15:0] $end
+$var wire 1 ! ca $end
+$var wire 1 ( cin $end
+$var wire 16 ) sum [15:0] $end
+$var wire 1 * w0 $end
+$scope module EBA_0 $end
+$var wire 8 + a [7:0] $end
+$var wire 8 , b [7:0] $end
+$var wire 1 * ca $end
+$var wire 1 ( cin $end
+$var wire 8 - sum [7:0] $end
+$var wire 1 . w0 $end
+$scope module FBA_0 $end
+$var wire 4 / a [3:0] $end
+$var wire 4 0 b [3:0] $end
+$var wire 1 . ca $end
+$var wire 1 ( cin $end
+$var wire 4 1 sum [3:0] $end
+$var wire 1 2 w0 $end
+$var wire 1 3 w1 $end
+$var wire 1 4 w2 $end
+$scope module FA_0 $end
+$var wire 1 5 a $end
+$var wire 1 6 b $end
+$var wire 1 2 ca $end
+$var wire 1 ( cin $end
+$var wire 1 7 sum $end
+$upscope $end
+$scope module FA_1 $end
+$var wire 1 8 a $end
+$var wire 1 9 b $end
+$var wire 1 3 ca $end
+$var wire 1 2 cin $end
+$var wire 1 : sum $end
+$upscope $end
+$scope module FA_2 $end
+$var wire 1 ; a $end
+$var wire 1 < b $end
+$var wire 1 4 ca $end
+$var wire 1 3 cin $end
+$var wire 1 = sum $end
+$upscope $end
+$scope module FA_3 $end
+$var wire 1 > a $end
+$var wire 1 ? b $end
+$var wire 1 . ca $end
+$var wire 1 4 cin $end
+$var wire 1 @ sum $end
+$upscope $end
+$upscope $end
+$scope module FBA_1 $end
+$var wire 4 A a [3:0] $end
+$var wire 4 B b [3:0] $end
+$var wire 1 * ca $end
+$var wire 1 . cin $end
+$var wire 4 C sum [3:0] $end
+$var wire 1 D w0 $end
+$var wire 1 E w1 $end
+$var wire 1 F w2 $end
+$scope module FA_0 $end
+$var wire 1 G a $end
+$var wire 1 H b $end
+$var wire 1 D ca $end
+$var wire 1 . cin $end
+$var wire 1 I sum $end
+$upscope $end
+$scope module FA_1 $end
+$var wire 1 J a $end
+$var wire 1 K b $end
+$var wire 1 E ca $end
+$var wire 1 D cin $end
+$var wire 1 L sum $end
+$upscope $end
+$scope module FA_2 $end
+$var wire 1 M a $end
+$var wire 1 N b $end
+$var wire 1 F ca $end
+$var wire 1 E cin $end
+$var wire 1 O sum $end
+$upscope $end
+$scope module FA_3 $end
+$var wire 1 P a $end
+$var wire 1 Q b $end
+$var wire 1 * ca $end
+$var wire 1 F cin $end
+$var wire 1 R sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module EBA_1 $end
+$var wire 8 S a [7:0] $end
+$var wire 8 T b [7:0] $end
+$var wire 1 ! ca $end
+$var wire 1 * cin $end
+$var wire 8 U sum [7:0] $end
+$var wire 1 V w0 $end
+$scope module FBA_0 $end
+$var wire 4 W a [3:0] $end
+$var wire 4 X b [3:0] $end
+$var wire 1 V ca $end
+$var wire 1 * cin $end
+$var wire 4 Y sum [3:0] $end
+$var wire 1 Z w0 $end
+$var wire 1 [ w1 $end
+$var wire 1 \ w2 $end
+$scope module FA_0 $end
+$var wire 1 ] a $end
+$var wire 1 ^ b $end
+$var wire 1 Z ca $end
+$var wire 1 * cin $end
+$var wire 1 _ sum $end
+$upscope $end
+$scope module FA_1 $end
+$var wire 1 ` a $end
+$var wire 1 a b $end
+$var wire 1 [ ca $end
+$var wire 1 Z cin $end
+$var wire 1 b sum $end
+$upscope $end
+$scope module FA_2 $end
+$var wire 1 c a $end
+$var wire 1 d b $end
+$var wire 1 \ ca $end
+$var wire 1 [ cin $end
+$var wire 1 e sum $end
+$upscope $end
+$scope module FA_3 $end
+$var wire 1 f a $end
+$var wire 1 g b $end
+$var wire 1 V ca $end
+$var wire 1 \ cin $end
+$var wire 1 h sum $end
+$upscope $end
+$upscope $end
+$scope module FBA_1 $end
+$var wire 4 i a [3:0] $end
+$var wire 4 j b [3:0] $end
+$var wire 1 ! ca $end
+$var wire 1 V cin $end
+$var wire 4 k sum [3:0] $end
+$var wire 1 l w0 $end
+$var wire 1 m w1 $end
+$var wire 1 n w2 $end
+$scope module FA_0 $end
+$var wire 1 o a $end
+$var wire 1 p b $end
+$var wire 1 l ca $end
+$var wire 1 V cin $end
+$var wire 1 q sum $end
+$upscope $end
+$scope module FA_1 $end
+$var wire 1 r a $end
+$var wire 1 s b $end
+$var wire 1 m ca $end
+$var wire 1 l cin $end
+$var wire 1 t sum $end
+$upscope $end
+$scope module FA_2 $end
+$var wire 1 u a $end
+$var wire 1 v b $end
+$var wire 1 n ca $end
+$var wire 1 m cin $end
+$var wire 1 w sum $end
+$upscope $end
+$scope module FA_3 $end
+$var wire 1 x a $end
+$var wire 1 y b $end
+$var wire 1 ! ca $end
+$var wire 1 n cin $end
+$var wire 1 z sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0z
+0y
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+b0 k
+b0 j
+b0 i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+b0 Y
+b0 X
+b0 W
+0V
+b0 U
+b0 T
+b0 S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+b0 C
+b0 B
+b0 A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+17
+06
+05
+04
+03
+02
+b1 1
+b0 0
+b0 /
+0.
+b1 -
+b0 ,
+b0 +
+0*
+b1 )
+1(
+b0 '
+b0 &
+1%
+b0 $
+b0 #
+b1 "
+0!
+$end
+#100
+1I
+1L
+b11 C
+1H
+1J
+b1 B
+b10 A
+07
+b110000 "
+b110000 )
+b110000 -
+b0 1
+b10000 ,
+b100000 +
+0%
+0(
+b10000 $
+b10000 '
+b100000 #
+b100000 &
+#200
+0I
+0L
+b0 C
+1_
+b1 U
+b1 Y
+0H
+0J
+1]
+b0 B
+b0 A
+b1 W
+17
+b100000001 "
+b100000001 )
+b1 -
+b1 1
+b0 ,
+b0 +
+b1 S
+1%
+1(
+b0 $
+b0 '
+b100000000 #
+b100000000 &

@@ -1,0 +1,136 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x1224890 .scope module, "top" "top" 2 3;
+ .timescale 0 0;
+v0x124edd0_0 .var "a", 3 0;
+v0x124ee50_0 .var "b", 3 0;
+v0x124eed0_0 .net "ca", 0 0, L_0x1250f70; 1 drivers
+v0x124efa0_0 .var "cin", 0 0;
+RS_0x7fecef6006a8 .resolv tri, L_0x124f9a0, L_0x1250260, L_0x1250b50, L_0x1251370;
+v0x124f070_0 .net8 "sum", 3 0, RS_0x7fecef6006a8; 4 drivers
+S_0x1227fd0 .scope module, "FBA_0" "FourBitAdder" 2 10, 3 2, S_0x1224890;
+ .timescale 0 0;
+v0x124e7a0_0 .net "a", 3 0, v0x124edd0_0; 1 drivers
+v0x124e860_0 .net "b", 3 0, v0x124ee50_0; 1 drivers
+v0x124e900_0 .alias "ca", 0 0, v0x124eed0_0;
+v0x124e9b0_0 .net "cin", 0 0, v0x124efa0_0; 1 drivers
+v0x124ea90_0 .alias "sum", 3 0, v0x124f070_0;
+v0x124eb10_0 .net "w0", 0 0, L_0x124f580; 1 drivers
+v0x124ebe0_0 .net "w1", 0 0, L_0x124fec0; 1 drivers
+v0x124ecb0_0 .net "w2", 0 0, L_0x1250690; 1 drivers
+L_0x124f740 .part v0x124edd0_0, 0, 1;
+L_0x124f870 .part v0x124ee50_0, 0, 1;
+L_0x124f9a0 .part/pv L_0x124f180, 0, 1, 4;
+L_0x1250000 .part v0x124edd0_0, 1, 1;
+L_0x1250130 .part v0x124ee50_0, 1, 1;
+L_0x1250260 .part/pv L_0x124fb40, 1, 1, 4;
+L_0x12507d0 .part v0x124edd0_0, 2, 1;
+L_0x1250990 .part v0x124ee50_0, 2, 1;
+L_0x1250b50 .part/pv L_0x1250360, 2, 1, 4;
+L_0x12510b0 .part v0x124edd0_0, 3, 1;
+L_0x1251240 .part v0x124ee50_0, 3, 1;
+L_0x1251370 .part/pv L_0x1250ce0, 3, 1, 4;
+S_0x124e0d0 .scope module, "FA_0" "FullAdder" 3 9, 4 1, S_0x1227fd0;
+ .timescale 0 0;
+L_0x124f0f0 .functor XOR 1, L_0x124f740, L_0x124f870, C4<0>, C4<0>;
+L_0x124f180 .functor XOR 1, L_0x124f0f0, v0x124efa0_0, C4<0>, C4<0>;
+L_0x124f3a0 .functor XOR 1, L_0x124f740, L_0x124f870, C4<0>, C4<0>;
+v0x124e1c0_0 .net *"_s0", 0 0, L_0x124f0f0; 1 drivers
+v0x124e280_0 .net *"_s5", 0 0, L_0x124f260; 1 drivers
+v0x124e320_0 .net *"_s6", 0 0, L_0x124f3a0; 1 drivers
+v0x124e3c0_0 .net *"_s9", 0 0, L_0x124f400; 1 drivers
+v0x124e470_0 .net "a", 0 0, L_0x124f740; 1 drivers
+v0x124e510_0 .net "b", 0 0, L_0x124f870; 1 drivers
+v0x124e5b0_0 .alias "ca", 0 0, v0x124eb10_0;
+v0x124e630_0 .alias "cin", 0 0, v0x124e9b0_0;
+v0x124e700_0 .net "sum", 0 0, L_0x124f180; 1 drivers
+L_0x124f260 .arith/mult 1, L_0x124f740, L_0x124f870;
+L_0x124f400 .arith/mult 1, L_0x124f3a0, v0x124efa0_0;
+L_0x124f580 .arith/sum 1, L_0x124f260, L_0x124f400;
+S_0x124da00 .scope module, "FA_1" "FullAdder" 3 10, 4 1, S_0x1227fd0;
+ .timescale 0 0;
+L_0x124fae0 .functor XOR 1, L_0x1250000, L_0x1250130, C4<0>, C4<0>;
+L_0x124fb40 .functor XOR 1, L_0x124fae0, L_0x124f580, C4<0>, C4<0>;
+L_0x124fd70 .functor XOR 1, L_0x1250000, L_0x1250130, C4<0>, C4<0>;
+v0x124daf0_0 .net *"_s0", 0 0, L_0x124fae0; 1 drivers
+v0x124dbb0_0 .net *"_s5", 0 0, L_0x124fc80; 1 drivers
+v0x124dc50_0 .net *"_s6", 0 0, L_0x124fd70; 1 drivers
+v0x124dcf0_0 .net *"_s9", 0 0, L_0x124fdd0; 1 drivers
+v0x124dda0_0 .net "a", 0 0, L_0x1250000; 1 drivers
+v0x124de40_0 .net "b", 0 0, L_0x1250130; 1 drivers
+v0x124dee0_0 .alias "ca", 0 0, v0x124ebe0_0;
+v0x124df60_0 .alias "cin", 0 0, v0x124eb10_0;
+v0x124e030_0 .net "sum", 0 0, L_0x124fb40; 1 drivers
+L_0x124fc80 .arith/mult 1, L_0x1250000, L_0x1250130;
+L_0x124fdd0 .arith/mult 1, L_0x124fd70, L_0x124f580;
+L_0x124fec0 .arith/sum 1, L_0x124fc80, L_0x124fdd0;
+S_0x124d360 .scope module, "FA_2" "FullAdder" 3 11, 4 1, S_0x1227fd0;
+ .timescale 0 0;
+L_0x1250300 .functor XOR 1, L_0x12507d0, L_0x1250990, C4<0>, C4<0>;
+L_0x1250360 .functor XOR 1, L_0x1250300, L_0x124fec0, C4<0>, C4<0>;
+L_0x1250540 .functor XOR 1, L_0x12507d0, L_0x1250990, C4<0>, C4<0>;
+v0x124d450_0 .net *"_s0", 0 0, L_0x1250300; 1 drivers
+v0x124d510_0 .net *"_s5", 0 0, L_0x1250450; 1 drivers
+v0x124d5b0_0 .net *"_s6", 0 0, L_0x1250540; 1 drivers
+v0x124d650_0 .net *"_s9", 0 0, L_0x12505a0; 1 drivers
+v0x124d6d0_0 .net "a", 0 0, L_0x12507d0; 1 drivers
+v0x124d770_0 .net "b", 0 0, L_0x1250990; 1 drivers
+v0x124d810_0 .alias "ca", 0 0, v0x124ecb0_0;
+v0x124d890_0 .alias "cin", 0 0, v0x124ebe0_0;
+v0x124d960_0 .net "sum", 0 0, L_0x1250360; 1 drivers
+L_0x1250450 .arith/mult 1, L_0x12507d0, L_0x1250990;
+L_0x12505a0 .arith/mult 1, L_0x1250540, L_0x124fec0;
+L_0x1250690 .arith/sum 1, L_0x1250450, L_0x12505a0;
+S_0x1226400 .scope module, "FA_3" "FullAdder" 3 12, 4 1, S_0x1227fd0;
+ .timescale 0 0;
+L_0x1250c80 .functor XOR 1, L_0x12510b0, L_0x1251240, C4<0>, C4<0>;
+L_0x1250ce0 .functor XOR 1, L_0x1250c80, L_0x1250690, C4<0>, C4<0>;
+L_0x1250e70 .functor XOR 1, L_0x12510b0, L_0x1251240, C4<0>, C4<0>;
+v0x1211940_0 .net *"_s0", 0 0, L_0x1250c80; 1 drivers
+v0x124cdc0_0 .net *"_s5", 0 0, L_0x1250dd0; 1 drivers
+v0x124ce60_0 .net *"_s6", 0 0, L_0x1250e70; 1 drivers
+v0x124cf00_0 .net *"_s9", 0 0, L_0x1250ed0; 1 drivers
+v0x124cfb0_0 .net "a", 0 0, L_0x12510b0; 1 drivers
+v0x124d050_0 .net "b", 0 0, L_0x1251240; 1 drivers
+v0x124d130_0 .alias "ca", 0 0, v0x124eed0_0;
+v0x124d1d0_0 .alias "cin", 0 0, v0x124ecb0_0;
+v0x124d2c0_0 .net "sum", 0 0, L_0x1250ce0; 1 drivers
+L_0x1250dd0 .arith/mult 1, L_0x12510b0, L_0x1251240;
+L_0x1250ed0 .arith/mult 1, L_0x1250e70, L_0x1250690;
+L_0x1250f70 .arith/sum 1, L_0x1250dd0, L_0x1250ed0;
+    .scope S_0x1224890;
+T_0 ;
+    %set/v v0x124edd0_0, 0, 4;
+    %set/v v0x124ee50_0, 0, 4;
+    %set/v v0x124efa0_0, 1, 1;
+    %delay 100, 0;
+    %movi 8, 4, 4;
+    %set/v v0x124edd0_0, 8, 4;
+    %movi 8, 2, 4;
+    %set/v v0x124ee50_0, 8, 4;
+    %set/v v0x124efa0_0, 0, 1;
+    %delay 100, 0;
+    %set/v v0x124edd0_0, 0, 4;
+    %movi 8, 3, 4;
+    %set/v v0x124ee50_0, 8, 4;
+    %set/v v0x124efa0_0, 1, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x1224890;
+T_1 ;
+    %vpi_call 2 29 "$monitor", $time, "a = %d, b = %d,cin = %b, Sum = %d, ca = %b", v0x124edd0_0, v0x124ee50_0, v0x124efa0_0, v0x124f070_0, v0x124eed0_0;
+    %vpi_call 2 30 "$dumpfile", "Frbit.vcd";
+    %vpi_call 2 31 "$dumpvars";
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "Frbit_tb.v";
+    "./Frbit.v";
+    "./FullAdder.v";
